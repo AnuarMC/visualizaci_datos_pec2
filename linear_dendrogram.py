@@ -3,7 +3,7 @@ import pandas as pd
 from scipy.cluster.hierarchy import linkage
 import plotly.figure_factory as ff
 
-data = pd.read_csv("csv/Crime_Incidents_in_2024")
+data = pd.read_csv("csv/Crime_Incidents_in_2024.csv")
 # Agrupar los datos  
 crime_grouped = data.groupby(['METHOD', 'OFFENSE']).size().reset_index(name='COUNT')
 
